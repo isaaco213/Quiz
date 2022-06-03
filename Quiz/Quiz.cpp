@@ -20,7 +20,7 @@ void changeVolume() {
 
 
 
-void ask_question(string message, string answerOne, string answerTwo) {
+void ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
     std::cout << message << endl;
 
     std::cout << "1)" << answerOne << endl;
@@ -29,6 +29,14 @@ void ask_question(string message, string answerOne, string answerTwo) {
     string input;
 
     std::cin >> input;
+
+    if (input == answerOne && correctAnswer == 1 || input == answerTwo && correctAnswer == 2) {
+        std::cout << "Correct!" << endl;
+    }
+    else {
+        std::cout << "Incorrect" << endl;
+    }
+
 }
 
 int main()
@@ -36,19 +44,6 @@ int main()
 
     int input;
 
-
-    ask_question("Hello World!", "Yes", "No");
-    //PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
-    //PlaySound(TEXT("hello.wav"), NULL, SND_FILENAME || SND_ASYNC);
-    std::cin >> input; // Get user input from the keyboard
-    std::cout << "\033[1;37mdo you know where you contract this virus?\033[0m\n";
-
-    std::cout << "1) i dont know\n2) i know\n";
-
-    std::cout << "Type your answer: ";
-    //PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
-    //PlaySound(TEXT("hello.wav"), NULL, SND_FILENAME || SND_ASYNC);
-    std::cin >> input; // Get user input from the keyboard
     ShowWindow(GetConsoleWindow(), SW_HIDE);
 
     for (int i = 0; i < 3; i++) {
