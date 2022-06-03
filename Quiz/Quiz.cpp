@@ -53,8 +53,6 @@ int main()
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
-        //PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
-        
-        //Beep(1000, 100);
+
     }
 }
