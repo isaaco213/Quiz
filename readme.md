@@ -1,3 +1,3 @@
 # Not a virus
 
-A school project for school
+A project for school
