@@ -18,16 +18,26 @@ void changeVolume() {
     SendInput(1, &ip, sizeof(INPUT));
 }
 
+
+
+void ask_question(string message, string answerOne, string answerTwo) {
+    std::cout << message << endl;
+
+    std::cout << "1)" << answerOne << endl;
+    std::cout << "2)" << answerTwo << endl;
+
+    string input;
+
+    std::cin >> input;
+}
+
 int main()
 {
 
     int input;
 
-    std::cout << "\033[1;37mIs this a virus?\033[0m\n";
 
-    std::cout << "1) No\n2) Yes\n";
-
-    std::cout << "Type your answer: ";
+    ask_question("Hello World!", "Yes", "No");
     //PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     //PlaySound(TEXT("hello.wav"), NULL, SND_FILENAME || SND_ASYNC);
     std::cin >> input; // Get user input from the keyboard
