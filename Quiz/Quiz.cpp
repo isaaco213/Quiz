@@ -7,7 +7,6 @@
 #pragma comment(lib, "winmm")
 #pragma comment(lib, "winmm.lib")
 
-
 using namespace std;
 void changeVolume() {
     INPUT ip = { 0 };
@@ -18,35 +17,29 @@ void changeVolume() {
     SendInput(1, &ip, sizeof(INPUT));
 }
 
-
-
-void ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
+// Returns true if correct and false if incorrect
+bool ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
     std::cout << message << endl;
 
     std::cout << "1)" << answerOne << endl;
     std::cout << "2)" << answerTwo << endl;
 
-
     string input;
 
     std::cin >> input;
-
+    
     if (input == answerOne && correctAnswer == 1 || input == answerTwo && correctAnswer == 2) {
         std::cout << "Correct!" << endl;
+        return true;
     }
     else {
         std::cout << "Incorrect" << endl;
+        return false;
     }
-
 }
 
-int main()
-{
-
-    int input;
-
-    ShowWindow(GetConsoleWindow(), SW_HIDE);
-
+// Runs the virus if function is called
+void Die() {
     for (int i = 0; i < 3; i++) {
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
     }
@@ -61,4 +54,13 @@ int main()
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
 
     }
+}
+
+int main()
+{
+    ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correctt answer (1..2)
+    
+    // Hides window
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
+    
 }
