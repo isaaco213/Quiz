@@ -26,6 +26,7 @@ void ask_question(string message, string answerOne, string answerTwo, int correc
     std::cout << "1)" << answerOne << endl;
     std::cout << "2)" << answerTwo << endl;
 
+
     string input;
 
     std::cin >> input;
