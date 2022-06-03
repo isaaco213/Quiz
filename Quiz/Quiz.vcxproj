@@ -141,9 +141,6 @@
   <ItemGroup>
     <ClCompile Include="Quiz.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="readme.md" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
