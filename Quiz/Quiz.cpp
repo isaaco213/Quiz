@@ -34,6 +34,9 @@ bool ask_question(string message, string answerOne, string answerTwo, int correc
     }
     else {
         std::cout << "Incorrect" << endl;
+
+        Die();
+
         return false;
     }
 }
@@ -47,6 +50,7 @@ void Die() {
     int x, y;
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
+        changeVolume();
         SetCursorPos(rand() % 1000, rand() % 800);
         system("start");
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
