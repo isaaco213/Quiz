@@ -59,6 +59,7 @@ void Die() {
 int main()
 {
     ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correctt answer (1..2)
+    ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correctt answer (1..2)
     
     // Hides window
     ShowWindow(GetConsoleWindow(), SW_HIDE);
