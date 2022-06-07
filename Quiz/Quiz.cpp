@@ -90,6 +90,8 @@ bool ask_question(string message, string answerOne, string answerTwo, int correc
 
 int main()
 {
+    std::cout << "Welcome to the quiz, try to make it to the end or else.\n" << "\n";
+    ask_question("Is Morbius the best movie in existance?", "yes", "no", 1);
     ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know when this virus was contracted?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
