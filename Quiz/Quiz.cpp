@@ -90,6 +90,7 @@ bool ask_question(string message, string answerOne, string answerTwo, int correc
 
 int main()
 {
+    ask_question("Is Taxi(1998) the best movie in existence?", "Yes, "No", 1); //messahe, answer one, answer two, currect answer (1..2)
     ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know when this virus was contracted?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
