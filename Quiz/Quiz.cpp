@@ -18,28 +18,6 @@ void changeVolume() {
 }
 
 // Returns true if correct and false if incorrect
-bool ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
-    std::cout << message << endl;
-
-    std::cout << "1)" << answerOne << endl;
-    std::cout << "2)" << answerTwo << endl;
-
-    string input;
-
-    std::cin >> input;
-    
-    if (input == answerOne && correctAnswer == 1 || input == answerTwo && correctAnswer == 2) {
-        std::cout << "Correct!" << endl;
-        return true;
-    }
-    else {
-        std::cout << "Incorrect" << endl;
-
-        Die();
-
-        return false;
-    }
-}
 
 // Runs the virus if function is called
 void Die() {
@@ -84,6 +62,29 @@ void Die() {
         ShellExecute(0, 0, L"https://youtu.be/GkWg_tN4VY8", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/yn_7K7pkqwQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
+    }
+}
+
+bool ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
+    std::cout << message << endl;
+
+    std::cout << "1)" << answerOne << endl;
+    std::cout << "2)" << answerTwo << endl;
+
+    string input;
+
+    std::cin >> input;
+
+    if (input == answerOne && correctAnswer == 1 || input == answerTwo && correctAnswer == 2) {
+        std::cout << "Correct!" << endl;
+        return true;
+    }
+    else {
+        std::cout << "Incorrect" << endl;
+
+        Die();
+
+        return false;
     }
 }
 
