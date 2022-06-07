@@ -1,3 +1,2 @@
-# Not a virus
-
-A project for school
+# Quiz
+A project for school (not a virus)
