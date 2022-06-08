@@ -85,10 +85,6 @@ void Die() {
         ShellExecute(0, 0, L"https://youtu.be/GkWg_tN4VY8", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/yn_7K7pkqwQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
-<<<<<<< HEAD
-
-
-=======
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
