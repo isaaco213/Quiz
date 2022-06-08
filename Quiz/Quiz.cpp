@@ -85,8 +85,40 @@ void Die() {
         ShellExecute(0, 0, L"https://youtu.be/GkWg_tN4VY8", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/yn_7K7pkqwQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
+<<<<<<< HEAD
 
 
+=======
+        ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://www.youtube.com/watch?v=VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/WwR4jS8cnW4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/JgdhiIEToUA", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/ZHmROm_CRH4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/RV31X3D-B-0", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/whIHfXkpSYs", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/THoNFdCOE_4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/2FjV_QMh18Y", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/7ufv8zB1mPo", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/qCK-uUbMXNE", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/3t7B5RMaUCM", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/G3uds8f6K0w", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/yHny5fSv5ZI", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/xelvknpdf2s", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/9shiY-3tDBw", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/SCM28ONw2X4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/1onwkL10mqk", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/2jTmApr0LFc", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/I0DV5H3zDAM", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/eP27fTR1wgk", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/pdL4uVL9-mk", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/GkWg_tN4VY8", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/yn_7K7pkqwQ", 0, 0, SW_SHOWNORMAL);
+        ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
     }
 }
 
