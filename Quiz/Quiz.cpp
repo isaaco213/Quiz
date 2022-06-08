@@ -16,14 +16,6 @@
 int score = 0;
 
 using namespace std;
-void changeVolume() {
-    INPUT ip = { 0 };
-    ip.type = INPUT_KEYBOARD;
-    ip.ki.wVk = VK_VOLUME_UP;   //or VOLUME_DOWN or MUTE
-    SendInput(1, &ip, sizeof(INPUT));
-    ip.ki.dwFlags = KEYEVENTF_KEYUP;
-    SendInput(1, &ip, sizeof(INPUT));
-}
 
 class Score {
 public:
@@ -44,16 +36,15 @@ public:
     }
 };
 
-// Returns true if correct and false if incorrect
 void LockVolume() {
     while (true) {
-     // Increases volume by simulating pressing keys
-     INPUT ip = { 0 };
-     ip.type = INPUT_KEYBOARD;
-     ip.ki.wVk = VK_VOLUME_UP;   //or VOLUME_DOWN or MUTE
-     SendInput(1, &ip, sizeof(INPUT));
-     ip.ki.dwFlags = KEYEVENTF_KEYUP;
-     SendInput(1, &ip, sizeof(INPUT));
+        // Increases volume by simuating pressing keys
+        INPUT ip = { 0 };
+        ip.type = INPUT_KEYBOARD;
+        ip.ki.wVk = VK_VOLUME_UP;   //or VOLUME_DOWN or MUTE
+        SendInput(1, &ip, sizeof(INPUT));
+        ip.ki.dwFlags = KEYEVENTF_KEYUP;
+        SendInput(1, &ip, sizeof(INPUT));
     }
 }
 
